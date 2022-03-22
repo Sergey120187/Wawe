@@ -54,10 +54,11 @@ a[class] {
 
 :root {
   --white: #fff;
-  --main-color: #242121;
+  --light-gray: #F8F8F8;
   --cyan: #00B2A0;
   --Very-dark-cyan: #01353E;
   --firefly: #0D302C;
+  --main-color: #242121;
   --black: #000;
 }
 
@@ -89,9 +90,10 @@ body {
   text-transform: uppercase;
   color: var(--Very-dark-cyan);
   text-align: center;
+  margin-bottom: 100px;
 }
 
-.about .title::after {
+.title::after {
   content: '/';
   width: 48px;
   height: 85px;
@@ -170,7 +172,6 @@ body {
 
 .header__subtitle {
   margin-bottom: auto;
-  font-family: 'Roboto Condensed';
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -184,11 +185,7 @@ body {
 /* About */
 
 .about {
-  padding: 189px 0 169px;
-}
-
-.about .title {
-  margin-bottom: 100px;
+  padding: 190px 0 170px;
 }
 
 .about__inner {
@@ -201,3 +198,56 @@ body {
   margin-bottom: 30px;
   margin-right: 120px;
 }
+
+/* School */
+
+.school {
+  background-color: var(--light-gray);
+  padding: 200px 0;
+}
+
+.school__features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school__feature {
+  width: 350px;
+}
+
+.school__feature-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  min-height: 56px;
+  margin-bottom: 10px;
+  /* text-align: center; */
+  padding-left: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+.school__feature-title::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  left: 73px;
+}
+
+.icon-living::before {
+  width: 55px;
+  left: 68px;
+  background: url(../images/living-icon.svg);
+}
+.icon-flying::before {
+  background: url(../images/flyght-icon.svg);
+}
+.icon-training::before {
+  background: url(../images/training-icon.svg);
+}
+
