@@ -209,6 +209,7 @@ body {
 .school__features {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .school__feature {
@@ -221,9 +222,8 @@ body {
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  min-height: 56px;
+  min-height: 58px;
   margin-bottom: 10px;
-  /* text-align: center; */
   padding-left: 133px;
   display: flex;
   flex-direction: column;
@@ -251,3 +251,58 @@ body {
   background: url(../images/training-icon.svg);
 }
 
+.school__info {
+  display: flex;
+}
+
+.school__info-statistics {
+  width: 600px;
+}
+
+.info-item {
+  position: relative;
+  height: 43px;
+  margin-bottom: 10px;
+  padding-top: 26px;
+}
+
+.info-item::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  top: 8px;
+}
+
+.info-item span {
+  position: absolute;
+  font-weight: 400;
+  font-size: 24px;
+  top: 5px;
+}
+
+.info-item1::before {
+  background: url(../images/Wawe1.svg);
+  width: 200px;
+}
+.info-item1 span {
+  left: 210px;
+}
+.info-item2::before {
+  background: url(../images/Wawe2.svg);
+  width: 247px;
+}
+.info-item2 span {
+  left: 257px;
+}
+.info-item3::before {
+  background: url(../images/Wawe3.svg);
+  width: 293px;
+}
+.info-item3 span {
+  left: 303px;
+}
+
+.school__info-text p {
+  margin-bottom: 30px;
+  max-width: 600px;
+}
