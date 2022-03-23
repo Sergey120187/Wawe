@@ -306,3 +306,25 @@ body {
   margin-bottom: 30px;
   max-width: 600px;
 }
+
+/* Study */
+
+.study {
+  background: url(../images/serfing.jpg) no-repeat right;
+  background-size: 50%;
+  margin-bottom: 200px;
+}
+
+.study__inner {
+  padding: 200px 0 147px;
+  max-width: 50%;
+}
+
+.study .title {
+  text-align: left;
+}
+
+.study__text p {
+  max-width: 507px;
+  margin-bottom: 30px;
+}
