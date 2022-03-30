@@ -328,3 +328,21 @@ body {
   max-width: 507px;
   margin-bottom: 30px;
 }
+
+/* Gallery */
+
+.gallery__statistics {
+  display: flex;
+  flex-flow: column wrap;
+  height: 39px;
+  align-items: center;
+  align-content: center;
+  padding-right: 100px;
+}
+
+.gallery__statistics dt,
+.gallery__statistics dd {
+  margin-left: 100px;
+}
+
+
