@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -168,18 +169,36 @@
     <div class="gallery__gallery container">
       <h2 class="title gallery__title">Галерея</h2>
       <div class="gallery__filter">
-        <button class="gallert__btn" data-filter="all">Все</button>
-        <button class="gallert__btn" data-filter=".t">Туристы</button>
-        <button class="gallert__btn" data-filter=".n">Природа</button>
-        <button class="gallert__btn" data-filter=".p">Профи</button>
+        <button class="gallery__btn" data-filter="all">Все</button>
+        <button class="gallery__btn" data-filter=".t">Туристы</button>
+        <button class="gallery__btn" data-filter=".n">Природа</button>
+        <button class="gallery__btn" data-filter=".p">Профи</button>
       </div>
       <div class="gallery__images">
-        <div class="gallery__item mix t n p"><img src="images/gallery/1.jpg" alt="Название картинки"></div>
-        <div class="gallery__item mix t"><img src="images/gallery/2.jpg" alt="Название картинки"></div>
-        <div class="gallery__item mix t"><img src="images/gallery/3.jpg" alt="Название картинки"></div>
-        <div class="gallery__item mix t"><img src="images/gallery/4.jpg" alt="Название картинки"></div>
-        <div class="gallery__item mix n"><img src="images/gallery/5.jpg" alt="Название картинки"></div>
-        <div class="gallery__item mix t n"><img src="images/gallery/6.jpg" alt="Название картинки"></div>
+        <div class="gallery__item mix t n p">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/1-big.jpg"></a>
+          <img src="images/gallery/1.jpg" alt="Название картинки">
+        </div>
+        <div class="gallery__item mix t">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/2-big.jpg"></a>
+          <img src="images/gallery/2.jpg" alt="Название картинки">
+        </div>
+        <div class="gallery__item mix t">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/3-big.jpg"></a>
+          <img src="images/gallery/3.jpg" alt="Название картинки">
+        </div>
+        <div class="gallery__item mix t">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/4-big.jpg"></a>
+          <img src="images/gallery/4.jpg" alt="Название картинки">
+        </div>
+        <div class="gallery__item mix n">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/5-big.jpg"></a>
+          <img src="images/gallery/5.jpg" alt="Название картинки">
+        </div>
+        <div class="gallery__item mix t n">
+          <a class="gallery__item-link"  data-fancybox data-src="images/gallery/6-big.jpg"></a>
+          <img src="images/gallery/6.jpg" alt="Название картинки">
+        </div>
       </div>
       <a class="gallery__link-more" href="#">Показать еще</a>
     </div>
@@ -188,7 +207,7 @@
       <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
     </blockquote>
     <div class="gallery__video container">
-      <a class="gallery__video__link" href="#">
+      <a class="gallery__video__link" data-fancybox href="https://youtu.be/LFDaKUHgK7E" data-width="1920" data-height="1080">
         <img src="images/Play.svg" alt="Воспроизведение видео">
       </a>
     </div>
@@ -207,6 +226,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/mixitup.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
   <script src="js/main.js"></script>
 </body>
 
